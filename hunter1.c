@@ -3,23 +3,23 @@
 #include<math.h>
 void main()
 {
-   long int a[20],i,j,n,temp,c;
+   long int b[20],i,j,n,temp,c;
    long int sum=0;
    clrscr();
    scanf("%ld",&n);
 for(i=0;i<n;i++)
 {
-  scanf("%d",&a[i]);
+  scanf("%d",&b[i]);
 }
 for(i=0;i<n;i++)
 {
  for(j=i+1;j<n;j++)
  {
-  if(a[j]>a[i])
+  if(b[j]>b[i])
  {
-  temp=a[i];
-  a[i]=a[j];
-  a[j]=temp;
+  temp=b[i];
+  b[i]=b[j];
+  b[j]=temp;
  }
  }
 }
@@ -32,7 +32,7 @@ for(i=0;i<n-1;i++)
     temp=temp/10;
     c++;
   }
-  sum=(sum*pow(10,c))+a[i+1];
+  sum=(sum*pow(10,c))+b[i+1];
 }
 printf("\n%ld",sum);
 getch();
