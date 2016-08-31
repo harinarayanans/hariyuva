@@ -5,7 +5,7 @@ void main()
 int n,i,sum=0;
 printf("upto");
 scanf("%d",&n);
-for(i=1;i<n;i++)
+for(i=1;i<=n;i++)
 {
 sum=sum+i;
 }
